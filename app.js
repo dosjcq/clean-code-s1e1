@@ -82,8 +82,8 @@ var editTask = function () {
   console.log("Change 'edit' to 'save'");
 
   var listItem = this.parentNode;
-
-  var editInput = listItem.querySelector("base-item__input-todo");
+  // let test = document.querySelector('.base-item__label-item')
+  var editInput = listItem.querySelector(".base-item__input-todo");
   var label = listItem.querySelector("label");
   var editBtn = listItem.querySelector(".base-item__edit-plan");
   var containsClass = listItem.classList.contains("incomlete-todo__edit-mode");
@@ -91,10 +91,17 @@ var editTask = function () {
   if (containsClass) {
     //switch to .editmode
     //label becomes the inputs value.
+    let li = editBtn.parentNode;
+    console.log((li.querySelector("label").style = "display: block"));
+    // console.log(li.querySelector(".todo"));
     label.innerText = editInput.value;
     editBtn.innerText = "Edit";
     editInput.classList.remove("base-item__input-edit");
   } else {
+    let li = editBtn.parentNode;
+    console.log((li.querySelector("label").style = "display: none"));
+
+    // console.log(li.querySelector(".todo"));
     editInput.value = label.innerText;
     editBtn.innerText = "Save";
     editInput.classList.add("base-item__input-edit");

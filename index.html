@@ -8,7 +8,7 @@
     />
     <link rel="stylesheet" href="/style.css" media="screen" charset="utf-8" />
   </head>
-  <body>
+  <body class="body">
     <header class="header">
       <figure>
         <img
@@ -50,19 +50,15 @@
               <img src="/remove.svg" alt="delete todo" />
             </button>
           </li>
-          <li class="incomlete-todo__edit-mode base-item">
+          <li class="incomplete-todo__li base-item">
             <input class="base-item__checkbox checbox-item" type="checkbox" />
-            <label class="base-item__label-item todo">Go Shopping</label>
+            <label class="base-item__label-item todo">Clean House</label>
             <input
               type="text"
-              value="go-shopping"
-              class="
-                todo
-                base-item__input-todo base-item_input-none base-item__input-edit
-              "
+              class="todo base-item__input-todo base-item_input-none"
             />
             <button class="base-item__base-btn base-item__edit-plan">
-              Save
+              Edit
             </button>
             <button class="base-item__delete-plan base-item__base-btn">
               <img src="/remove.svg" alt="delete todo" />

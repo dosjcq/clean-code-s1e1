@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -162,5 +162,5 @@ li > * {
 }
 
 .incomlete-todo__edit-mode {
-  display: none;
+  display: block;
 }
